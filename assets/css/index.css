@@ -1,0 +1,220 @@
+﻿body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    color: #444;
+}
+.navbar {
+    position: fixed; /* Make the navbar fixed position */
+    width: 100%; /* Make the navbar take up the full width of the viewport */
+    z-index: 1000; /* Ensure the navbar is above other content */
+}
+
+.page {
+    color: #4A4444;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+smooth {
+    font-size: 100%;
+    text-align: center;
+}
+
+.jumbotron {
+    background: none;
+}
+
+/*---Start Parallax---*/
+
+.parallax {
+    background: url("/assets/images/PortBackground.jpg") repeat fixed 100%;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 400%;
+    text-align: center;
+    min-height: 60vh; /* Ensure the parallax section covers the full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 56px; /* Compensate for the height of the fixed navbar */
+    text-transform: uppercase;
+}
+
+.parallax-inner {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius:1em;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+    .parallax-inner:hover {
+        background-color: rgba(0, 0, 0, 0.95);
+    }
+/*---End Parallax---*/
+
+footer {
+    font-size: 150%;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    margin-bottom: 2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #0073B1;
+    margin-bottom: 1em;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5em;
+}
+
+ul {
+    font-size: 1.1rem;
+    list-style-type: none;
+    padding: 0;
+}
+
+    ul li {
+        margin-bottom: 1.5em;
+    }
+
+.Resume {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    margin-bottom: 2em;
+}
+
+.summary, .experience, .education, .skills {
+    margin-bottom: 2em;
+}
+
+.summary {
+    background-color: #f9f9f9;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.experience, .education, .skills {
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .experience .job, .education .school, .skills ul {
+        padding-left: 20px;
+        position: relative;
+    }
+
+        .experience .job::before, .education .school::before, .skills ul::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            color: #0073B1;
+            font-weight: bold;
+        }
+.skills {
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    .skills h2 {
+        color: #0073B1;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    .skills ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .skills li {
+        margin-bottom: 1em;
+        font-size: 1.1em;
+        line-height: 1.5;
+        transition: all 0.3s ease-in-out;
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+        .skills li button {
+            padding: 0.5em 1em;
+            background-color: #0073B1;
+            color: #fff;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+            .skills li button:hover {
+                background-color: #00568d;
+            }
+
+.download-button {
+    text-align: center;
+}
+
+    .download-button a {
+        font-size: 1.2rem;
+    }
+
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+}
+
+.accordion-body {
+    border: none;
+    padding: 1em;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 1em;
+}
+
+    .accordion-body p {
+        margin-bottom: 0;
+    }
+
+.show-more {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+    .show-more:hover {
+        background-color: #0056b3;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        transform: translateY(-2px);
+    }
+
